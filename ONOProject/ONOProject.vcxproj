@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{392f00c8-1af4-4915-aa67-92b4274fd0ff}</ProjectGuid>
+    <RootNamespace>ONOProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXLIB_DIR);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXLIB_DIR);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXLIB_DIR);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXLIB_DIR);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXLIB_DIR);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXLIB_DIR);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXLIB_DIR);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXLIB_DIR);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sorce\Application.cpp" />
+    <ClCompile Include="Sorce\Camera.cpp" />
+    <ClCompile Include="Sorce\Common\Collision\CollisionCircle.cpp" />
+    <ClCompile Include="Sorce\Common\Collision\CollisionLine.cpp" />
+    <ClCompile Include="Sorce\Common\Collision\CollisionPolygon.cpp" />
+    <ClCompile Include="Sorce\Common\Collision\CollisionShape.cpp" />
+    <ClCompile Include="Sorce\Common\Quaternion.cpp" />
+    <ClCompile Include="Sorce\Common\Transform.cpp" />
+    <ClCompile Include="Sorce\Common\Vector2.cpp" />
+    <ClCompile Include="Sorce\DeltaTimeManager.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\2DImage\ImageMaterial.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\2DImage\ImageRenderer.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\3DModel\ModelMaterial.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\3DModel\ModelRenderer.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\MaterialBase.cpp" />
+    <ClCompile Include="Sorce\Graphics\Drawable\RendererBase.cpp" />
+    <ClCompile Include="Sorce\Input\InputManager.cpp" />
+    <ClCompile Include="Sorce\main.cpp" />
+    <ClCompile Include="Sorce\Object\Background\Background.cpp" />
+    <ClCompile Include="Sorce\Object\Background\SkyDome.cpp" />
+    <ClCompile Include="Sorce\Object\BoundObject\BoundObject.cpp" />
+    <ClCompile Include="Sorce\Object\BoundObject\Character.cpp" />
+    <ClCompile Include="Sorce\Object\BoundObject\Obstacle.cpp" />
+    <ClCompile Include="Sorce\Object\BoundObject\TitleBoundObject.cpp" />
+    <ClCompile Include="Sorce\Object\Object.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\CharacterCanon.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\GenerateObject.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\Goal.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\ObstacleCanon.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\Stage.cpp" />
+    <ClCompile Include="Sorce\Object\Stage\Wall.cpp" />
+    <ClCompile Include="Sorce\Object\Trampoline.cpp" />
+    <ClCompile Include="Sorce\Player\Player.cpp" />
+    <ClCompile Include="Sorce\Resource\Resource.cpp" />
+    <ClCompile Include="Sorce\Resource\ResourceManager.cpp" />
+    <ClCompile Include="Sorce\Scene\BaseScene.cpp" />
+    <ClCompile Include="Sorce\Scene\GameScene.cpp" />
+    <ClCompile Include="Sorce\Scene\ResultScene.cpp" />
+    <ClCompile Include="Sorce\Scene\SceneManager.cpp" />
+    <ClCompile Include="Sorce\Scene\TitleScene.cpp" />
+    <ClCompile Include="Sorce\Sound\SoundController.cpp" />
+    <ClCompile Include="Sorce\Utility\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sorce\Application.h" />
+    <ClInclude Include="Sorce\Camera.h" />
+    <ClInclude Include="Sorce\Common\Collision\CollisionCircle.h" />
+    <ClInclude Include="Sorce\Common\Collision\CollisionLine.h" />
+    <ClInclude Include="Sorce\Common\Collision\CollisionPolygon.h" />
+    <ClInclude Include="Sorce\Common\Collision\CollisionShape.h" />
+    <ClInclude Include="Sorce\Common\Quaternion.h" />
+    <ClInclude Include="Sorce\Common\Transform.h" />
+    <ClInclude Include="Sorce\Common\Vector2.h" />
+    <ClInclude Include="Sorce\DeltaTimeManager.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\2DImage\ImageMaterial.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\2DImage\ImageRenderer.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\3DModel\ModelMaterial.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\3DModel\ModelRenderer.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\MaterialBase.h" />
+    <ClInclude Include="Sorce\Graphics\Drawable\RendererBase.h" />
+    <ClInclude Include="Sorce\Input\InputManager.h" />
+    <ClInclude Include="Sorce\Object\Background\Background.h" />
+    <ClInclude Include="Sorce\Object\Background\SkyDome.h" />
+    <ClInclude Include="Sorce\Object\BoundObject\BoundObject.h" />
+    <ClInclude Include="Sorce\Object\BoundObject\Character.h" />
+    <ClInclude Include="Sorce\Object\BoundObject\Obstacle.h" />
+    <ClInclude Include="Sorce\Object\BoundObject\TitleBoundObject.h" />
+    <ClInclude Include="Sorce\Object\Object.h" />
+    <ClInclude Include="Sorce\Object\Stage\CharacterCanon.h" />
+    <ClInclude Include="Sorce\Object\Stage\GenerateObject.h" />
+    <ClInclude Include="Sorce\Object\Stage\Goal.h" />
+    <ClInclude Include="Sorce\Object\Stage\ObstacleCanon.h" />
+    <ClInclude Include="Sorce\Object\Stage\Stage.h" />
+    <ClInclude Include="Sorce\Object\Stage\Wall.h" />
+    <ClInclude Include="Sorce\Object\Trampoline.h" />
+    <ClInclude Include="Sorce\Player\Player.h" />
+    <ClInclude Include="Sorce\Resource\Resource.h" />
+    <ClInclude Include="Sorce\Resource\ResourceManager.h" />
+    <ClInclude Include="Sorce\Scene\BaseScene.h" />
+    <ClInclude Include="Sorce\Scene\GameScene.h" />
+    <ClInclude Include="Sorce\Scene\ResultScene.h" />
+    <ClInclude Include="Sorce\Scene\SceneManager.h" />
+    <ClInclude Include="Sorce\Scene\TitleScene.h" />
+    <ClInclude Include="Sorce\Sound\SoundController.h" />
+    <ClInclude Include="Sorce\Utility\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Sorce\Graphics\Shader\Pixel\ImageNormalPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Sorce\Graphics\Shader\Pixel\ModelNormalPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Sorce\Graphics\Shader\Pixel\ModelToonPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)/Data/Shader/Pixel/%(Filename).pso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Sorce\Graphics\Shader\Vertex\ModelNormal1FrameVertexShader.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/Data/Shader/Vertex/%(Filename).vso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)/Data/Shader/Vertex/%(Filename).vso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)/Data/Shader/Vertex/%(Filename).vso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)/Data/Shader/Vertex/%(Filename).vso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sorce\Graphics\Shader\Common\CommonFunctionHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Common\CommonShader3DHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Common\CommonStructuresHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Common\VertexToPixelHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Common\VertexToPixelTypeHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Pixel\PixelFunctionHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Pixel\PixelShader2DHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Pixel\PixelShader3DHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Pixel\PixelStructuresHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Vertex\VertexFunctionHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Vertex\VertexInputHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Vertex\VertexInputTypeHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Vertex\VertexShader3DHeader.hlsli" />
+    <None Include="Sorce\Graphics\Shader\Vertex\VertexStructuresHeader.hlsli" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
